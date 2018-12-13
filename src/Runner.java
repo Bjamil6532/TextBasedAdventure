@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Runner {
 
 
@@ -19,7 +21,7 @@ public class Runner {
         //Create a random winning room.
         int x = (int)(Math.random()*building.length);
         int y = (int)(Math.random()*building.length);
-        building[x][y] = new WinningRoom(x, y);
+        building[x][y] = new Trap(x, y);
 
         //Setup player 1 and the input scanner
         Person player1 = new Person("FirstName", "FamilyName", 0,0);
@@ -114,4 +116,3 @@ public class Runner {
 
 
 }
-
